@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Таблица на весь экран</title>
+    <title>Power BI Таблица на весь экран</title>
     <style>
         /* Стили для всей страницы */
         body, html {
@@ -14,31 +14,20 @@
             overflow: hidden; /* Убираем полосы прокрутки */
         }
 
-        /* Стили для таблицы */
-        table {
-            width: 100%;
-            height: 100%;
-            border-collapse: collapse; /* Убираем отступы между ячейками */
-            table-layout: fixed; /* Фиксированная ширина колонок */
-        }
-
-        /* Стили для ячеек таблицы */
-        th, td {
-            border: 1px solid #000; /* Границы ячеек */
-            text-align: center; /* Выравнивание текста по центру */
-            padding: 10px;
-            font-size: 16px;
-            word-wrap: break-word; /* Перенос текста, если он не помещается */
-        }
-
-        /* Заголовки таблицы */
-        th {
-            background-color: #f4f4f4;
-            font-weight: bold;
+        /* Стили для iframe */
+        iframe {
+            width: 100%; /* Растягиваем на всю ширину */
+            height: 100%; /* Растягиваем на всю высоту */
+            border: none; /* Убираем рамку */
         }
     </style>
 </head>
 <body>
-    <iframe title="marks beta" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZTM4ZDVjZDYtZTFiYi00ODdhLWFiMmQtYzAyYzZkYTk4NTA1IiwidCI6Ijk1MjM5OWRkLTQ4MDgtNGNiNi05MWRjLTE4YjM0NmE4MzA5NCJ9" frameborder="0" allowFullScreen="true"></iframe>
+    <!-- Power BI iframe -->
+    <iframe 
+        title="marks beta" 
+        src="https://app.powerbi.com/view?r=eyJrIjoiZTM4ZDVjZDYtZTFiYi00ODdhLWFiMmQtYzAyYzZkYTk4NTA1IiwidCI6Ijk1MjM5OWRkLTQ4MDgtNGNiNi05MWRjLTE4YjM0NmE4MzA5NCJ9" 
+        allowFullScreen="true">
+    </iframe>
 </body>
 </html>
